@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.firstRow,
+.secondRow,
+.thirdRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.wrapper__body > div > div {
+  width: 250px;
+  height: 250px;
+  border: 1px solid black;
+}
