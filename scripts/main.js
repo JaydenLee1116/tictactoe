@@ -5,9 +5,19 @@
 
 // 1. 클릭시 O와 X를 번갈아 표시
 
-const blocks = document.getElementsByClassName('block');
-console.log(blocks);
+let count = 0;
 
+function clickBtn() {
+  if (count % 2 === 0) {
+    document.getElementById('one').innerHTML = 'O';
+    count++;
+  } else {
+  }
+}
+
+document.getElementById('four').addEventListener('click', (e) => {
+  console.log(e);
+});
 // blocks[0].addEventListener('click', (e) => {
 //   console.log('test');
 // });
