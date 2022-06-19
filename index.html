@@ -3,7 +3,10 @@
   <head>
     <title>Jayden's TicTacToe</title>
     <link rel="stylesheet" href="./styles/style.css" />
-    <script src="./scripts/main.js"></script>
+    <script src="./scripts/main.js" defer></script>
+    <!-- script defer!!!!!! html이 먼저 파싱되고나서 외부 스크립트 파일을 실행
+    즉, defer 안하고 js 파일에서 html 요소를 가져오려고 하면 당연히 안가져와짐 ㅠㅠㅠㅠㅠㅠㅠ
+    아직 html이 파싱되지도 않았는데 거기서 뭘 가져올 수가 없으니...-->
   </head>
   <body>
     <div class="wrapper">

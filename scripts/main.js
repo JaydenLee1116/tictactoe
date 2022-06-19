@@ -1,3 +1,4 @@
+'use strict';
 // 틱택토 규칙
 // 각 칸 클릭 시 O, X가 번갈아 표시
 // O 혹은 X가 일직선으로 배열 시 배열된 기호가 승리
@@ -5,6 +6,8 @@
 
 // 1. 클릭시 O와 X를 번갈아 표시
 
+const blockFirst = document.querySelector('.firstRow');
+console.log(blockFirst);
 let count = 0;
 
 function clickBtn() {
@@ -14,10 +17,14 @@ function clickBtn() {
   } else {
   }
 }
+window.onload = () => {
+  const blocks = document.getElementsByClassName('block');
+  console.log(blocks[0]);
+};
 
-document.getElementById('four').addEventListener('click', (e) => {
-  console.log(e);
-});
+// document.getElementById('two').addEventListener('click', (e) => {
+//   console.log(e);
+// });
 // blocks[0].addEventListener('click', (e) => {
 //   console.log('test');
 // });
