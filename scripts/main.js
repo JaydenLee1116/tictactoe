@@ -6,25 +6,20 @@
 
 // 1. 클릭시 O와 X를 번갈아 표시
 
-const blockFirst = document.querySelector('.firstRow');
-console.log(blockFirst);
 let count = 0;
 
-function clickBtn() {
-  if (count % 2 === 0) {
-    document.getElementById('one').innerHTML = 'O';
-    count++;
-  } else {
-  }
+const blocks = document.getElementsByClassName('block');
+for (let block of blocks) {
+  block.addEventListener('click', (e) => {
+    if (count % 2 === 0) {
+      e.target.innerHTML = 'O';
+      count++;
+    } else {
+      e.target.innerHTML = 'X';
+      count++;
+    }
+  });
 }
-window.onload = () => {
-  const blocks = document.getElementsByClassName('block');
-  console.log(blocks[0]);
-};
-
-// document.getElementById('two').addEventListener('click', (e) => {
-//   console.log(e);
-// });
 // blocks[0].addEventListener('click', (e) => {
-//   console.log('test');
+//   e.target.innerHTML = 1;
 // });
