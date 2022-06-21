@@ -25,6 +25,7 @@ for (let block of blocks) {
   block.addEventListener('click', (e) => {
     if (count % 2 === 0 && e.target.innerHTML === '') {
       e.target.innerHTML = 'O';
+      e.target.style.color = 'blue';
       count++;
       if (e.target.id === 'one') {
         firstRow.O++;
@@ -62,6 +63,7 @@ for (let block of blocks) {
       }
     } else if (count % 2 === 1 && e.target.innerHTML === '') {
       e.target.innerHTML = 'X';
+      e.target.style.color = 'red';
       count++;
       if (e.target.id === 'one') {
         firstRow.X++;
