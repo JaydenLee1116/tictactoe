@@ -116,8 +116,10 @@ for (let block of blocks) {
         location.reload();
       });
     } else if (count === 9) {
-      alert('무승부입니다! 게임을 다시 시작합니다!');
-      location.reload();
+      setTimeout(() => {
+        alert('무승부입니다! 게임을 다시 시작합니다!');
+        location.reload();
+      });
     }
   });
 }
