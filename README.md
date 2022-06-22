@@ -2,7 +2,7 @@
 
 ## Toy Project : Vanilla JS를 이용하여 tictactoe 게임 만들어보기
 
-<img width="400" height="400" align="center" alt="Screen Shot 2022-06-21 at 14 23 47" src="https://user-images.githubusercontent.com/86241737/174722528-26fd9361-edb0-4444-87c2-5b8307c5e541.png">
+<img width="350" alt="Screen Shot 2022-06-22 at 11 59 52" src="https://user-images.githubusercontent.com/86241737/174934247-51180154-9ab0-46af-86a7-1897cc9443aa.png">
 
 링크 : [Jayden's TicTacToe](https://jaydenlee1116.github.io/tictactoe/)
 
